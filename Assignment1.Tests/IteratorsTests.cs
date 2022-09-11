@@ -15,7 +15,6 @@ public class IteratorsTests {
         Assert.Equal(new[] {1, 2, 3, 4}, result);
 
     }
-    
     [Fact]
     public void filter_with_even_predicate_given_1_to_5_returns_2_and_4() {
 
