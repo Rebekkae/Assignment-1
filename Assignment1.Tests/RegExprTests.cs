@@ -19,7 +19,7 @@ public class RegExprTests {
     public void resolution_when_given_4_resolutions_return_stream_of_4_tuples() {
 
         // Arrange
-        string input = "1920x1080, 1024x768, 800x600, 640x480";
+        string[] input = new [] {"1920x1080" , "1024x768" , "800x600" , "640x480"};
 
         // Act
         var result = RegExpr.Resolution(input);
