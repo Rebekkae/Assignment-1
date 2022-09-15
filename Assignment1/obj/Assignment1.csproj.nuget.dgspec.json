@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rebekkaeriksen/Documents/GitHub/Assignment-1/Assignment1/Assignment1.csproj": {}
+    "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj": {}
   },
   "projects": {
-    "/Users/rebekkaeriksen/Documents/GitHub/Assignment-1/Assignment1/Assignment1.csproj": {
+    "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rebekkaeriksen/Documents/GitHub/Assignment-1/Assignment1/Assignment1.csproj",
+        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "/Users/rebekkaeriksen/Documents/GitHub/Assignment-1/Assignment1/Assignment1.csproj",
-        "packagesPath": "/Users/rebekkaeriksen/.nuget/packages/",
-        "outputPath": "/Users/rebekkaeriksen/Documents/GitHub/Assignment-1/Assignment1/obj/",
+        "projectPath": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj",
+        "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rebekkaeriksen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
