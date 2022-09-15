@@ -1,4 +1,6 @@
 namespace Assignment1;
+
+using System.Collections;
 using System.Text.RegularExpressions;
 public static class RegExpr {
     public static IEnumerable<string> SplitLine(IEnumerable<string> lines) {
@@ -26,8 +28,8 @@ public static class RegExpr {
         var regex = new Regex(pattern);   
         foreach (Match match in regex.Matches(html)){
             yield return string.Join("", removeNestedTags(match.Value, tag)); 
-        }
-        
+        } 
+
     }
 
     public static IEnumerable<string> removeNestedTags(string html, string tag){
