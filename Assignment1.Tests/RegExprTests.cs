@@ -46,7 +46,7 @@ public class RegExprTests {
     public void resolution_when_given_4_faulty_input_return_stream_of_4_tuples() {
 
         // Arrange
-        string[] input = new [] {"1920xx1080" , "1024xxx768x" , "800xx600" , "640x480"};
+        string[] input = new [] {" 1920xx1080" , "1024 xxx768x " , "800xx 600 " , " 640x480"};
 
         // Act
         var result = RegExpr.Resolution(input);
