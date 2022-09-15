@@ -16,6 +16,20 @@ public class RegExprTests {
     }
 
     [Fact]
+    public void splitline_given_special_characters_return_empty()
+    {
+
+        // Arrange
+        IEnumerable<string> stream = new[] { " , ", " ? ", " ! ", " . "};
+
+        // Act
+        var result = RegExpr.SplitLine(stream);
+
+        // Assert
+        Assert.Equal(Array.Empty<string>(), result);
+    }
+
+    [Fact]
     public void resolution_when_given_4_resolutions_return_stream_of_4_tuples() {
 
         // Arrange
