@@ -41,4 +41,17 @@ public class RegExprTests {
         // Assert
         Assert.Equal(new[] { (1920, 1080), (1024, 768), (800, 600), (640, 480)}, result);
     }
+
+    [Fact]
+    public void resolution_when_given_4_faulty_input_return_stream_of_4_tuples() {
+
+        // Arrange
+        string[] input = new [] {"1920xx1080" , "1024xxx768x" , "800xx600" , "640x480"};
+
+        // Act
+        var result = RegExpr.Resolution(input);
+
+        // Assert
+        Assert.Equal(new[] { (1920, 1080), (1024, 768), (800, 600), (640, 480)}, result);
+    }
 }
