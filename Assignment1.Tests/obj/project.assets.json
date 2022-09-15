@@ -6132,34 +6132,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lukas\\.nuget\\packages\\": {}
+    "/Users/mcandersyo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1.Tests\\Assignment1.Tests.csproj",
+      "projectUniqueName": "/Users/mcandersyo/Desktop/Assignment-1/Assignment1.Tests/Assignment1.Tests.csproj",
       "projectName": "Assignment1.Tests",
-      "projectPath": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1.Tests\\Assignment1.Tests.csproj",
-      "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1.Tests\\obj\\",
+      "projectPath": "/Users/mcandersyo/Desktop/Assignment-1/Assignment1.Tests/Assignment1.Tests.csproj",
+      "packagesPath": "/Users/mcandersyo/.nuget/packages/",
+      "outputPath": "/Users/mcandersyo/Desktop/Assignment-1/Assignment1.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mcandersyo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj": {
-              "projectPath": "C:\\Users\\lukas\\Desktop\\Code\\C#\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj"
+            "/Users/mcandersyo/Desktop/Assignment-1/Assignment1/Assignment1.csproj": {
+              "projectPath": "/Users/mcandersyo/Desktop/Assignment-1/Assignment1/Assignment1.csproj"
             }
           }
         }
@@ -6211,7 +6209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -103,7 +103,7 @@ public class RegExprTests {
         string html = "<div>\r\n\t<h2>\r\n\t\t<a href=\"https://www.w3schools.com\"> Go to W3Schools </a>\r\n\t</h2>\r\n</div>";
 
         //Act
-        var expected = new []{(new Uri("https://www.w3schools.com"), "Go to W3Schools") };
+        var expected = new []{(new Uri("https://www.w3schools.com"), " Go to W3Schools ") };
 
         var result = RegExpr.Urls(html);
 

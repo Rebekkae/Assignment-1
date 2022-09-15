@@ -23,7 +23,7 @@ public static class RegExpr {
     }
 
     public static IEnumerable<string> InnerText(string html, string tag){
-        Console.WriteLine(html);
+        //Console.WriteLine(html);
         var pattern = $"<({tag})" + @"([^>]+)*>(.+?)<\/\1>";
         var regex = new Regex(pattern);   
         foreach (Match match in regex.Matches(html)){
@@ -40,9 +40,11 @@ public static class RegExpr {
         }
     }
 
+    
+
     public static IEnumerable<(Uri url, string title)> Urls(string html){
-        var masterPattern = @"(?<everything><(a)(?<attributes>[^>]+)*>(.+?)<\/\2>)";
-        var pattern = @"([""'])(?<url>.*?)\1(\stitle=\1(?<title>.*?)\1)?";
+        var masterPattern = @"(?<everything><(a)(?<attributes>[^>]+)*>(.+?)<\/a>)";
+        var pattern = @"([""'])(?<url>.*?)([""'])(\stitle=([""'])(?<title>.*?)([""']))?";
         var regex = new Regex(masterPattern);
         var url_regex = new Regex(pattern);
         var matches = Regex.Match(html, masterPattern);
@@ -50,12 +52,10 @@ public static class RegExpr {
             foreach(Match match in regex.Matches(html)){
                 foreach (Match url in url_regex.Matches(match.Groups["attributes"].Value)){
                     if (url.Groups["url"].Success){
-                        Console.WriteLine("url match");
                         if (url.Groups["title"].Success){
                             yield return (new Uri(url.Groups["url"].Value), url.Groups["title"].Value);
                         }
                         else{
-                            Console.WriteLine("no title match");
                             string inner = InnerText(match.Groups["everything"].Value, "a").First<string>();
                             yield return (new Uri(url.Groups["url"].Value), inner);
                         }
