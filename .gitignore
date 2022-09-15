@@ -58,3 +58,9 @@ dkms.conf
 *.props
 *.targets
 Assignment1.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+*.json
+Assignment1.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+*.props
+*.targets
+*.cache
+*.editorconfig
